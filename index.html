@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluent - Campus Health Monitor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heart-pulse"></i>
+                <span>Fluent</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#problem" class="nav-link">Problem</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#waitlist" class="nav-btn">Join Waitlist</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-university"></i>
+                    <span>Made by Berkeley Students, For Berkeley Students</span>
+                </div>
+                <h1 class="hero-title">
+                    Keep Your Campus <span class="gradient-text">Healthy</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Join thousands of Berkeley students in monitoring and improving campus health through weekly check-ins. Anonymous, simple, and effective.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToWaitlist()">
+                        <i class="fas fa-bell"></i>
+                        Join Waitlist
+                    </button>
+                    <button class="btn-secondary" onclick="scrollToFeatures()">
+                        <i class="fas fa-play"></i>
+                        Learn More
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" id="waitlist-count">500+</span>
+                        <span class="stat-label">Students Interested</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">7</span>
+                        <span class="stat-label">Dorms Covered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">30sec</span>
+                        <span class="stat-label">Weekly Survey</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-preview">
+                            <div class="app-header">
+                                <div class="status-bar">
+                                    <span>9:41</span>
+                                    <div class="battery"></div>
+                                </div>
+                                <div class="app-title">Fluent</div>
+                            </div>
+                            <div class="health-scores">
+                                <div class="score-card campus">
+                                    <div class="score-circle">
+                                        <span class="score">8/10</span>
+                                    </div>
+                                    <span class="score-label">Campus Health</span>
+                                </div>
+                                <div class="score-card dorm">
+                                    <div class="score-circle">
+                                        <span class="score">7/10</span>
+                                    </div>
+                                    <span class="score-label">Your Dorm</span>
+                                </div>
+                            </div>
+                            <div class="insight-card">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <div>
+                                    <div class="insight-title">Flu Reports Rising</div>
+                                    <div class="insight-subtitle">15 cases in Unit 2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section id="problem" class="problem-solution">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Problem We're Solving</h2>
+                <p>Campus health outbreaks spread fast, but information spreads slowly</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <i class="fas fa-virus"></i>
+                    <h3>Silent Spread</h3>
+                    <p>Illnesses spread through dorms before anyone knows there's an outbreak</p>
+                </div>
+                <div class="problem-card">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>No Visibility</h3>
+                    <p>Students don't know if their dorm or campus has higher illness rates</p>
+                </div>
+                <div class="problem-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Late Response</h3>
+                    <p>By the time health services respond, it's already spread widely</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How Fluent Works</h2>
+                <p>Simple. Anonymous. Effective.</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Weekly Check-in</h3>
+                        <p>Take a quick 30-second anonymous health survey once per week</p>
+                        
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Real-time Insights</h3>
+                        <p>Get instant access to campus and dorm health trends and alerts</p>
+                        
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Stay Protected</h3>
+                        <p>Make informed decisions about your health and social activities</p>
+                       
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Personal Health Insights</h3>
+                        <p>Track your health patterns, illness duration, symptom trends, and get personalized wellness recommendations</p>
+                        <div class="step-visual">
+                            <i class="fas fa-user-chart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful Features</h2>
+                <p>Everything you need to stay healthy on campus</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Health Dashboard</h3>
+                    <p>Real-time health scores for your dorm and entire campus with trend analysis</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Sickness Map</h3>
+                    <p>Visual map showing illness concentrations across different campus housing</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3>Anonymous Reporting</h3>
+                    <p>Complete privacy protection - we track trends, not individuals</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Smart Alerts</h3>
+                    <p>Get notified about health trends that might affect you and your community</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Dorm Comparisons</h3>
+                    <p>See how your housing compares to others and campus averages</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Health Resources</h3>
+                    <p>Personalized health recommendations and campus resource connections</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Built by Berkeley Students</h2>
+                <p>Meet the team making campus health transparent</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/PersonalHeadshot2.jpg" alt="Pratham Muriki">
+                        
+                    </div>
+                    <h3>Pratham Muriki</h3>
+                    <p class="team-role">Co-Founder & Developer</p>
+                    <p class="team-bio">My passion for Fluent started when Berkeley WarnMe told me about a COVID outbreak… two days late.</p>
+                    <div class="team-social">
+                        <a href="https://www.linkedin.com/in/pratham-muriki" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/pratham_muriki/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <!-- Add more team members as needed -->
+                 <div class="team-card">
+                <div class="team-photo">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>Sameet Das</h3>
+                <p class="team-role">Co-Founder & Designer</p>
+                <p class="team-bio">My passion started when I caught the flu and the campus clinic’s next available appointment was… after finals.</p>
+                <div class="team-social">
+                    <a href="https://www.linkedin.com/in/sameet-das/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/im.sameetd/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section id="waitlist" class="waitlist">
+        <div class="container">
+            <div class="waitlist-content">
+                <div class="waitlist-text">
+                    <h2>Join the Movement</h2>
+                    <p>Be among the first Berkeley students to experience Fluent. Get early access and help shape the future of campus health monitoring.</p>
+                    <div class="waitlist-benefits">
+                        <div class="benefit">
+                            <i class="fas fa-check"></i>
+                            <span>Early access to the app</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-check"></i>
+                            <span>Exclusive beta features</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-check"></i>
+                            <span>Direct input on new features</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="waitlist-form">
+                    <form id="waitlist-signup">
+                        <h3>Join the Waitlist</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Berkeley Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="housing" required>
+                                <option value="">Select Your Housing</option>
+                                <option value="unit1">Unit 1</option>
+                                <option value="unit2">Unit 2</option>
+                                <option value="unit3">Unit 3</option>
+                                <option value="clark-kerr">Clark Kerr</option>
+                                <option value="foothill">Foothill</option>
+                                <option value="blackwell">Blackwell</option>
+                                <option value="stern">Stern</option>
+                                <option value="off-campus">Off Campus</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-primary full-width">
+                            <i class="fas fa-rocket"></i>
+                            Join Waitlist
+                        </button>
+                        <p class="form-note">We'll never spam you. Updates only about Fluent's launch.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-heart-pulse"></i>
+                        <span>Fluent</span>
+                    </div>
+                    <p>Making Berkeley healthier, one survey at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#how-it-works">How It Works</a>
+                        <a href="#waitlist">Join Waitlist</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#team">Team</a>
+                        <a href="mailto:info.fluent.team@gmail.com">Contact</a>
+                        <a href="#privacy">Privacy Policy</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#"><i class="fab fa-tiktok"></i> Tiktok</a>
+                        <a href="mailto:info.fluent.team@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fluent. Made with ❤️ at UC Berkeley.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore-compat.js"></script>
+
+    <script>
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCJnYw3JOU3R0Au-_jmqgMOoXYjPOeRJRA",
+  authDomain: "fluent-website-c8cd8.firebaseapp.com",
+  projectId: "fluent-website-c8cd8",
+  storageBucket: "fluent-website-c8cd8.firebasestorage.app",
+  messagingSenderId: "234429197515",
+  appId: "1:234429197515:web:d827df7d91a7aad32cff4e",
+  measurementId: "G-MYVQGM1K3C"
+};
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+
+    <!-- Your JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
